@@ -1,6 +1,6 @@
 export async function getUserCriteria(prompt) {
   const response = await fetch(
-    "https://your-render-backend-url.onrender.com/recommend",
+    "https://product-reco-ai-backend-1.onrender.com",
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -11,3 +11,4 @@ export async function getUserCriteria(prompt) {
   const data = await response.json();
   return data.products || [];
 }
+
